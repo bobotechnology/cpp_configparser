@@ -62,7 +62,7 @@ public:
         : LocatedError(
               ErrorCode::Parsing,
               make_message(source),
-              std::move(source),
+              source,
               line) {
         append(line, std::move(text));
     }
